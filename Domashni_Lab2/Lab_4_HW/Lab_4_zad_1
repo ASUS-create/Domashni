@@ -1,0 +1,24 @@
+""" x=int(input("Enter value of x: "))
+y=int(input("Enter value of y: "))
+
+if x > y:
+    m=x
+    x=y
+    y=m
+    print("x=", x)
+    print("y=", y)
+    print("{x} > {y}".format(x=x, y=y))
+else:
+    print("x=", x)
+    print("y=", y)
+    print("{x} < {y}".format(x=x, y=y))
+ """
+
+x = int(input("Enter value of x: "))
+y = int(input("Enter value of y: "))
+
+if x > y:
+    x,y = y, x # Swap values if x is greater than y
+    print("x=", x)
+    print("y=", y)
+    print("{x} < {y}".format(x=x, y=y))

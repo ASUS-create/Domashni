@@ -1,0 +1,12 @@
+try:
+    x=int(input("Enter value of x: "))
+    y=int(input("Enter value of y: "))
+    if x < 0 or y < 0:
+        print("-")
+    elif y==0:
+        print("y cannot be zero.")
+    else:
+        print("+")
+except ValueError:
+    print("Invalid input. Please enter integers only.")
+    exit()
