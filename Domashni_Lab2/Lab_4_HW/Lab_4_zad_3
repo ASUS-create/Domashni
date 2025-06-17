@@ -1,0 +1,27 @@
+try:
+    x = float(input("Enter value of x: "))
+    y = float(input("Enter value of y: "))
+    z= float(input("Enter value of z: "))
+
+    if x>y and x>z:
+        print("The largest number is x: {x}".format(x=x))
+    elif y>x and y>z:
+        print("The largest number is y: {y}".format(y=y))
+    elif z>x and z>y:
+        print("The largest number is z: {z}".format(z=z))
+    elif x==y and x>z:
+        print("x and y are equal and larger than z: {x}".format(x=x))
+    elif y==z and y>x:
+        print("y and z are equal and larger than x: {y}".format(y=y))
+    elif x==z and x>y:
+        print("x and z are equal and larger than y: {x}".format(x=x))
+    elif x==y and y==z:
+        print("All three numbers are equal: {x}".format(x=x))
+except ValueError:
+    print("Invalid input. Please enter numeric values.")
+    exit(1)
+    
+
+
+
+
