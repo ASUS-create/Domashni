@@ -1,0 +1,40 @@
+# This code checks the sums of pairs and triples of variables to see if they equal zero.
+# It prints a message if any of the sums is zero.
+try:
+
+    num1=int(input("Enter the first number: "))
+    num2=int(input("Enter the second number: "))    
+    num3=int(input("Enter the third number: "))
+    subset_zero = False
+    if num1+num2==0:
+        print("The subset of {num1, num2} sums to zero.")
+        subset_zero= True
+    if num1+num3==0:
+        print("The subset of {num1, num3} sums to zero.")
+        subset_zero= True
+    if num2+num3==0:
+        print("The subset of {num2, num3} sums to zero.")
+        subset_zero= True
+    if num1+num2+num3==0:
+        print("The subset of {num1, num2, num3} sums to zero.")
+        subset_zero= True
+    if num1==0:
+        print("The subset of {num1} is zero.")
+        subset_zero= True
+    if num2==0:
+        print("The subset of {num2} is zero.")
+        subset_zero= True
+    if num3==0:
+        print("The subset of {num3} is zero.")
+        subset_zero= True
+    if subset_zero== False:
+        print("No pairs or triples of numbers sum to zero.")
+except ValueError:
+    print("Invalid input. Please enter integer values.")
+    exit(1)
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
+    exit(1)
+
+
+
