@@ -1,0 +1,28 @@
+try:
+    x = int(input("Enter value of x between 0 and 9:"))
+    if x==0:
+        print("You entered zero.")
+    elif x==1:
+        print("You entered one.")
+    elif x==2:
+        print("You entered two.")
+    elif x==3:
+        print("You entered three.")
+    elif x==4:
+        print("You entered four.")
+    elif x==5:
+        print("You entered five.")
+    elif x==6:
+        print("You entered six.")
+    elif x==7:
+        print("You entered seven.")
+    elif x==8:
+        print("You entered eight.")
+    elif x==9:
+        print("You entered nine.")
+    else:
+        print("You entered a number outside the range of 1 to 9.")
+        exit(1)
+except ValueError:
+    print("Invalid input for x. Please enter an integer.")
+    exit(1)
