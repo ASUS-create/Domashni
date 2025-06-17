@@ -1,0 +1,22 @@
+try:
+    points=int(input("Enter points (0-9): "))
+    bonus_points=0
+    if 1<=points<=3:
+        bonus_points=points*10
+        print(f"Points now are: {bonus_points}")
+    elif 4<=points<=6:
+        bonus_points=points*100
+        print(f"Points now are: {bonus_points}")
+    elif 7<=points<=9:
+        bonus_points=points*1000
+        print(f"Points now are: {bonus_points}")
+    elif points==0 or points>9:
+        print(f"Error: Invalid points value {points}. Points must be between 1 and 9, or exactly 0.")
+    else:
+        print("Error: Points must be a non-negative integer between 0 and 9.")
+except ValueError:
+    print("Invalid input. Please enter an integer value for points.")
+    
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
+    
