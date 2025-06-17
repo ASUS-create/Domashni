@@ -1,0 +1,27 @@
+try:
+    a=float(input("Enter value of a: "))
+    b=float(input("Enter value of b: "))
+    c=float(input("Enter value of c: "))
+    if a == 0:
+        print("Coefficient 'a' cannot be zero in a quadratic equation.")
+        exit(1)
+    # Calculate the roots of the quadratic equation
+    discriminant = b**2 - 4*a*c
+    if discriminant < 0:
+        print("The equation has no real roots.")
+        exit(1)
+    elif discriminant == 0:
+        print("The equation has one real root.")
+    else:
+        print("The equation has two distinct real roots.")
+    x1 = (-b + discriminant**0.5) / (2*a)
+    x2 = (-b - discriminant**0.5) / (2*a)
+    print("The roots of the quadratic equation are: x1 = {x1}, x2 = {x2}".format(x1=x1, x2=x2))
+    if x1 == x2:
+        print("The roots are equal: x1 = x2 = {:.5f}.format(x1=x1)")
+    else:
+        print("The roots are distinct: x1 = {:.5f},x2={:.5f}.format(x1=x1, x2=x2)")
+except ValueError:
+    print("Invalid input. Please enter numeric values.")
+    exit(1)
+
