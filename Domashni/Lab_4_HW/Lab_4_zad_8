@@ -1,0 +1,92 @@
+num = int(input("Enter a number between 0 and 1000: "))
+number=""
+if num < 0 or num > 999:
+    print("Error: Number must be between 0 and 1000.")
+    exit(1)
+elif num == 0:
+    number = "zero"
+elif 100<=num<=199:
+    number="one hundred"
+    reminder=num-100
+    if reminder>0:
+        number += " and "
+elif 200<=num<=299:
+    number="two hundred"
+    reminder=num-200
+    if reminder>0:
+        number += " and "
+elif 300<=num<=399:
+    number="two hundred"
+    reminder=num-300
+    if reminder>0:
+        number += " and "
+elif 400<=num<=499:
+    number="two hundred"
+    reminder=num-400
+    if reminder>0:
+        number += " and "
+elif 500<=num<=599:
+    number="two hundred"
+    reminder=num-500
+    if reminder>0:
+        number += " and "
+elif 600<=num<=699:
+    number="two hundred"
+    reminder=num-600
+    if reminder>0:
+        number += " and "
+elif 700<=num<=799:
+    number="two hundred"
+    reminder=num-700
+    if reminder>0:
+        number += " and "
+elif 800<=num<=899:
+    number="two hundred"
+    reminder=num-800
+    if reminder>0:
+        number += " and "
+elif 900<=num<=999:
+    number="two hundred"
+    reminder=num-900
+    if reminder>0:
+        number += " and "
+elif 1<=num<=9:
+    if num == 1:
+        number = "one"
+    elif num == 2:
+        number = "two"
+    elif num == 3:
+        number = "three"
+    elif num == 4:
+        number = "four"     
+    elif num == 5:
+        number = "five"
+    elif num == 6:
+        number = "six"
+    elif num == 7:
+        number = "seven"    
+    elif num == 8:
+        number = "eight"
+    elif num == 9:
+        number = "nine"
+elif 10<=num<=19:
+    if num == 10:
+        number = "ten"
+    elif num == 11:
+        number = "eleven"
+    elif num == 12:
+        number = "twelve"
+    elif num == 13:
+        number = "thirteen"
+    elif num == 14:
+        number = "fourteen"
+    elif num == 15:
+        number = "fifteen"
+    elif num == 16:
+        number = "sixteen"
+    elif num == 17:
+        number = "seventeen"
+    elif num == 18:
+        number = "eighteen"
+    elif num == 19:
+        number = "nineteen"
